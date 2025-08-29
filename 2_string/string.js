@@ -98,6 +98,13 @@ console.log(allreplaceMsg)
 let change="i am Bangalore,i love Bangalore"
 console.log(change.replaceAll("Bangalore","Chennai"))
 
+// ! string interpolation***
+
+let a=10
+let b=20
+
+console.log(`the multiplication of ${a} and ${b} is ${a*b}`);
+
 
 
 
