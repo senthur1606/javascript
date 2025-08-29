@@ -65,7 +65,9 @@ console.log(aadhar);
 
 //! 1. primitive data types
 
-let phno=9876543210  // number
+//! 1.number
+
+let phno=9876543210  
 console.log(phno);
 
 //todo: typeof operator is used to find the data type of a variable
