@@ -98,15 +98,42 @@ console.log(allreplaceMsg)
 let change="i am Bangalore,i love Bangalore"
 console.log(change.replaceAll("Bangalore","Chennai"))
 
+
 // ! string interpolation***
 
 let a=10
 let b=20
 
-console.log(`the multiplication of ${a} and ${b} is ${a*b}`);
+console.log(`the multiplication of ${a} and ${b} is ${a*b}`)
+
+// ! 11.split()
+
+// it is used to convert any string into array.
+
+let greet = "good evening"
+console.log(greet.split(" "))
+console.log(greet.split(''))
+console.log(greet.split())
+
+// ! 12. slice()
+
+// it is used to extract one string from another string.
+// it will take two parameters(startIndex,endIndex)
+// it will not includes the endIndex values.
+// here we can give nagative value also.
+let str6 = "this is javascript session"
+console.log(str6.slice(0,4)) //this
+console.log(str6.slice(8)) //javascript session
+console.log(str6.slice(3,0))
+console.log(str6.slice(-7)) //session
 
 
+// ! 13. substring()
 
+console.log(str6.substring(0,4)) //this
+console.log(str6.substring(8)) //javascript session
+console.log(str6.substring(3,0)) //thi
+console.log(str6.substring(-7)) //this is javascript session
 
 
 
