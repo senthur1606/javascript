@@ -46,6 +46,8 @@ console.log(city)
 
 let str4="  hello  "
 console.log(str4.trim())
+console.log(str4.trimLeft())
+console.log(str4.trimRight())
 
 // ! 4. indexof()
 
