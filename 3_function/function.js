@@ -33,3 +33,55 @@ let a=function()
     console.log("I am anonymous function")
 }
 a()
+
+// ! Arrow function
+let arrow = () =>{
+    console.log("I am arrow function")
+}
+arrow()
+
+// ! nested function
+let outer = ()=>{
+    console.log("I am outer function")
+    let inner =()=>{
+        console.log("I am inner function")
+    }
+    inner()
+}
+outer()
+
+// ! Lexical Scopping
+
+//  in nested function inner functin can access all the properties of outer function but the outer funtion can't access the property of inner function, this is called Lexical scoping
+
+let parent = () =>{
+    let a=10
+    let child =() =>{
+        let b =20
+        console.log(a)
+        console.log(b)
+    }
+    child()
+}
+parent()
+
+
+// ! Higher order function and callback Function ***
+
+// any function that takes another function as parameter is called higherorder function.
+// the function we are sending to the higher order function as parameter is called callback function.
+
+let hof =(a)=>{
+    console.log("i am higher order function")
+    a()
+}
+
+hof(()=>{
+    console.log("i am calback function")
+});
+
+// ! IIFE(Immediate Invoke Function Expression)
+
+(function(){
+    console.log("I am IIFE Function")
+})()
