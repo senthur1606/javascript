@@ -75,7 +75,12 @@ console.log(arr6.reverse())
 
 // ! 10.join()
 
-// this method is used any array converted into string
+// this method is used to convert any array into string
 
 let arr7=["Html","css","javascript"]
 console.log(arr7.join(" "))
+
+// ! reverse the string using only methods
+
+let str="hello"
+
