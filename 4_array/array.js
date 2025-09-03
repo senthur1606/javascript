@@ -97,13 +97,13 @@ console.log(revstr)
 
 console.log(str.split("").reverse().join(""))
 
-// ! 11. slice()
+// ! 11. slice()*****
 // it is extracting one array from another array
 
 let arr9=[10,0,30,40,480,892,930]
 console.log(arr9.slice(2,6))
 
-// !12. splice()
+// !12. splice()****
 
 // this method will take 3 parameters (startindex , deleted count , replacementvalue)
 //this method modify the original array.
@@ -112,12 +112,15 @@ let arr10=[10,89,89,730,67,56,54,73]
 arr10.splice(1,4,400)
 console.log(arr10)
 
-// ! Higher order array methods
+// ! Higher order array methods****
 
 
 // ! 1. map()
 
-// it is used for traversing array if we want to perform with all the element
+// map method is higher oreder array method
+// it is used for traversing array if we want to perform any operation with all the elements of the array.
+// it take one callback function 3 parameters (element,index,array)
+
 let numbers=[80,75,65,82,92]  //op-->[85, 80, 70, 87, 97]
 
 let num=numbers.map((ele)=>{
@@ -135,9 +138,16 @@ let upper=subject.map((element)=>{
 })
 console.log(upper)
 
+// task-2
+let val1=[100,200,300,400]
+let add1=val1.map((ele)=>{
+       return ele+100
+})
+console.log(add1)
+
 // ! 2. filter()
 
-// it will check the condition if condition will become true after that it will return value
+// it is one higherorder array method used to traverse the array and ,it will check the condition if condition will become true after that it will return value
 
 let filterarr=numbers.filter((ele)=>{
     return ele>80
@@ -145,6 +155,9 @@ let filterarr=numbers.filter((ele)=>{
 console.log(filterarr)
 
 // ! 3. reduce()
+
+// it is one higherorder array method used to covert any array into single value
+// it take 4 parameters (accumulator,element,index,array)
 
 let arrr=[10,20,30,40,90]
 
@@ -156,6 +169,11 @@ console.log(arrr1)
 
 // ! 4.sort()
 
+// it is used to sort the array into ascending or descending order.
+// it will take two parameters
+    // first parameter - second parameter will give ascending order
+    // second parameter - first parameter will give descending order 
+
 let arr11=[3,2,9,0,8]
 let asc=arr11.sort((a,b)=>{
     return a-b //ascending order
@@ -166,3 +184,15 @@ let des=arr11.sort((a,b)=>{
     return b-a
 })
 console.log(des)
+
+// ! foreach()
+
+// map method is higher oreder array method
+// it is used for traversing array 
+// it will not return any value
+
+let x=arr11.forEach((ele)=>{
+    // return ele+5
+    console.log(ele+5)
+})
+
