@@ -6,6 +6,23 @@ console.log("this is external javascript")
 
 //let, var, const
 
+// in var key re-declaration is possible
+// in let key re-declaration is not possible
+
+// in var key variable hosting is possible
+// in let key variable hosting is not possible through's an error
+
+// var keyword is global scope we can access out side of the scope also
+// let & const key local scope we can't access outside of the scope
+
+console.log(sna) //undefined
+var sna='raju'
+console.log(sna)
+
+console.log(sn) //error
+let sn='rajan'
+console.log(sn)
+
 //! let keyword
 
 let sname
