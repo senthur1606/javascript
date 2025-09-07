@@ -19,6 +19,7 @@ console.log(arr1)
 // ! 2.pop()
 
 // it is used to remove the last element from the array.
+// it will return the removed element only
 
 let arr2=[20,80,90]
 arr2.pop()
@@ -27,6 +28,7 @@ console.log(arr2)
 // ! 3.unshift()
 
 // it is used to store element at the starting of array.
+// it will return length of modified array
 
 let arr3=[70,80,90]
 arr3.unshift(60)
@@ -35,6 +37,7 @@ console.log(arr3)
 // ! 4.shift()
 
 // it is used to remove the element from the starting
+// it will return the removed element only
 
 let arr4=[50,60,70]
 arr4.shift()
