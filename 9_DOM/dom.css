@@ -53,3 +53,13 @@ main>.card{
     padding: 10px;
     box-shadow: 0px 4px 8px black;
 }
+
+main> .dark{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+}

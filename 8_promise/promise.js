@@ -7,7 +7,7 @@
 
 let p=new Promise((resolve,reject)=>{
 
-    let studied=false
+    let studied=true
 
     if(studied)
     {
